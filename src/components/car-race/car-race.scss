@@ -1,0 +1,126 @@
+.main__car-block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.main__track-block {
+  flex: 1 1 auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: start;
+}
+.main__name-car {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-family: 'AMG Anahit', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #4dddff;
+}
+
+.main__cars-panel{
+  position: relative;
+  z-index: 0;
+  flex: 0 0 auto;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main__top-panel,
+.main__bottom-panel {
+  display: flex;
+  width: 180px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main__button-select,
+.main__button-remove,
+.main__button-start,
+.main__button-stop {
+  width: 86px;
+  height: 26px;
+  font-family: 'Gagalin', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  color: #0b2241;
+  background: radial-gradient(circle at center, #96eae1, #61e8d9, #1cead8, #00fddf);
+  border: none;
+  border-radius: 5px;
+}
+
+.main__button-select:hover,
+.main__button-remove:hover,
+.main__button-start:hover,
+.main__button-stop:hover {
+  background: radial-gradient(circle at center, #96eabd, #61e890, #1cea83, #00fd76);
+  box-shadow: #2946b0 1px 0 1px 2px;
+}
+
+.main__button-select:active,
+.main__button-remove:active,
+.main__button-start:active,
+.main__button-stop:active {
+  background: radial-gradient(circle at center, #dcec97, #e4e861, #bdea1c, #cffd00);
+  box-shadow: #0b2241 1px 0 1px 2px;
+}
+
+.main__button-select:disabled,
+.main__button-remove:disabled,
+.main__button-start:disabled,
+.main__button-stop:disabled {
+  background: radial-gradient(circle at center, #c5d3ce, #98aea5, #6a7f76, #475a53);
+  box-shadow: #0b2241 1px 0 1px 2px;
+}
+
+.main__track{
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  flex-direction: row;
+  justify-content: normal;
+}
+
+.main__car-track {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  border-bottom: 3px dashed #b37c4c;
+}
+
+.main__car-wrapper{
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 10px 0 5px;
+  width: 67px;
+  height: 35px;
+  //transform: translate(1370%);
+  //left: calc(100% - 67px);
+}
+
+.main__car-svg {
+  display: block;
+  width: 67px;
+  height: 35px;
+}
+
+
+.main__finish{
+  position: absolute;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  right: 67px;
+}
+
+.main__finish-flag {
+  width: 100%;
+  height: 100%;
+}

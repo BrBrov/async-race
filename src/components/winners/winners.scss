@@ -1,0 +1,42 @@
+.main__winners-block {
+  display: flex;
+  max-width: 450px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__winners-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main__winners-label,
+.main__winners-count {
+  font-family: 'AMG Anahit', sans-serif;
+  font-size: 2em;
+  color: #a40606;
+}
+
+.main__page-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main__page-title,
+.main__page-count {
+  font-family: 'AMG Anahit', sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #f1a805;
+}
+
+.main__winners-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}

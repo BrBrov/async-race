@@ -1,0 +1,54 @@
+.main__winner-record {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main__winner-record:nth-child(odd) {
+  background-color: #cbe6ed;
+}
+
+.main__winner-record:nth-child(even) {
+  background-color: #d7efee;
+}
+
+.main__winner-number {
+  width: 45px;
+}
+
+.main__winner-car {
+  display: flex;
+  width: 75px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #d7efee;
+}
+
+.main__winner-svg {
+  width: 70px;
+  height: 35px;
+}
+
+.main__winner-name {
+  width: 200px;
+}
+
+.main__winner-wins {
+  width: 45px;
+}
+
+.main__winner-time {
+  width: 85px;
+}
+
+.main__winner-number,
+.main__winner-name,
+.main__winner-wins,
+.main__winner-time {
+  align-self: center;
+  text-align: center;
+  font-family: 'AMG Anahit', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #240541;
+}

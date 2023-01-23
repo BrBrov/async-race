@@ -1,0 +1,12 @@
+.main__car-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 50px;
+}
+
+.main__car-svg {
+  align-self: flex-end;
+  width: 100%;
+  height: 100%;
+}

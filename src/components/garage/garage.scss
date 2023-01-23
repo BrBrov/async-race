@@ -1,0 +1,17 @@
+.main__garage-block {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__race-block {
+  display: flex;
+  height: 500px;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
