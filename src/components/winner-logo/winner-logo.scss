@@ -1,0 +1,31 @@
+.container__block-logo {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #dfa586;
+  border-radius: 10px;
+}
+
+.container__congratulation {
+  font-family: 'Gagalin', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #dc4a0a;
+}
+
+.container__name,
+.container__time {
+  font-family: 'AMG Anahit', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #062701;
+}
