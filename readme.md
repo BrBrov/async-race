@@ -1,1 +1,1 @@
-##### This repo for task async-race of rsshool
+##### This repo for task async-race of rsschool
