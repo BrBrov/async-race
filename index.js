@@ -1,4 +1,5 @@
 const jsonServer = require('json-server');
+const express = require('express');
 
 const db = {
   garage: [
@@ -32,11 +33,12 @@ const db = {
   ],
 };
 
+const pageServer = express();
 const server = jsonServer.create();
 const router = jsonServer.router(db);
-const middlewares = jsonServer.defaults({static: './async-race', logger: false});
+const middlewares = jsonServer.defaults({logger: false});
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 const state = { velocity: {}, blocked: {} };
 
@@ -98,6 +100,9 @@ server.patch('/engine', (req, res) => {
 
 server.use(router);
 
+pageServer.use(express.static('./async-race'));
+
 server.listen(PORT, () => {
   console.log('Server is running on port', process.connected, PORT);
 });
+pageServer.listen(80, () => console.log('page server started!'))
